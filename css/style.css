@@ -1,0 +1,19 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Righteous', cursive;
+}
+
+p, a {
+    font-family: 'Quicksand', sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.small-logo {
+    height: 100px;
+    width: 100px;
+}
