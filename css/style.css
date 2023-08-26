@@ -77,3 +77,11 @@ nav {
 .button-primary:hover {
     background-color: var(--dark-blue);
 }
+
+.find-gm-section {
+    background-color: var(--dark-purple);
+}
+
+.find-table-section {
+    background-color: var(--pure-black);
+}
