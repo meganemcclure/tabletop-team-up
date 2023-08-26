@@ -21,11 +21,13 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Righteous', cursive;
     color: var(--off-white);
+    margin-bottom: 0rem;
 }
 
 p, a, i, button {
     font-family: 'Quicksand', sans-serif;
-    color: var(--off-white)
+    color: var(--off-white);
+    margin-bottom: 0rem;
 }
 
 a {
@@ -39,8 +41,82 @@ i {
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    padding: 20px;
+    gap: 20px;
+    width: 100%;
+}
+
+/* nav logo styling */
+.nav-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.nav-logo img {
+    height: 60px;
+    width: 60px;
+}
+
+.nav-logo:hover {
+    text-decoration: none;
+}
+
+/* nav filter button styling */
+nav .button-primary i {
+    font-size: 16px;
+}
+
+/* searchbar styling */
+.searchbar {
+    background-color: var(--off-white);
+    border-radius: 1000px;
+    border-width: 2px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--pure-black);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    flex-grow: 1;
+    max-width: 600px;
+    cursor: pointer;
+}
+
+.searchbar p {
+    color: var(--off-black);
+}
+
+.searchbar i {
+    color: var(--off-black);
+    font-size: 16px;
+}
+
+/* login button styling */
+.nav-login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: 10px;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.nav-login:hover {
+    text-decoration: none;
+}
+
+.nav-login i, p {
+    font-size: 20px;
 }
 
 .small-logo {
@@ -65,6 +141,11 @@ nav {
 }
 
 .button-primary {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
     background-color: var(--bright-blue);
     border-color: var(--dark-blue);
     border-width: 2px;
