@@ -1,9 +1,39 @@
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Righteous', cursive;
+/* This file contains global styling that all pages should have access to */
+:root {
+    --bright-purple: #C49ED9;
+    --bright-blue: #4FD9D5;
+    --dark-purple: #836096;
+    --dark-blue: #228986;
+    --yellow: #E2B93B;
+    --red: #EB5757;
+    --off-black: #141414;
+    --pure-black: #000000;
+    --off-white: #FCFCFC;
+    --pure-white: #FFFFFF;
+    --dark-grey: #858585;
+    --light-grey: #F9F9F9;
 }
 
-p, a {
+body {
+    background-color: var(--off-black);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Righteous', cursive;
+    color: var(--off-white);
+}
+
+p, a, i, button {
     font-family: 'Quicksand', sans-serif;
+    color: var(--off-white)
+}
+
+a {
+    text-decoration: underline;
+}
+
+i {
+    font-size: 40px;
 }
 
 nav {
@@ -16,4 +46,34 @@ nav {
 .small-logo {
     height: 100px;
     width: 100px;
+}
+
+.homepage-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+    gap: 40px;
+    text-align: center;
+}
+
+.homepage-section-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.button-primary {
+    background-color: var(--bright-blue);
+    border-color: var(--dark-blue);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 100px;
+    color: var(--off-black);
+    padding: 10px 20px;
+}
+
+.button-primary:hover {
+    background-color: var(--dark-blue);
 }
