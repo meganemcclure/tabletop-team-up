@@ -1,0 +1,16 @@
+/* include import so we can use the colour style variables */
+@import "style.css";
+
+.faq-question-section {
+    text-align: left;
+    
+    border-width: 2px;
+    border-color: var(--off-white);
+    border-style: solid;
+    border-radius: 20px;
+
+    padding: 20px;
+    width: 100%;
+
+    max-width: 1000px;
+}
