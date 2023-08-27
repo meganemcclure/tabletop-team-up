@@ -40,12 +40,24 @@ i {
 
 nav {
     display: flex;
+    flex-direction: column;
+}
+
+.sticky-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav-general {
+    display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     padding: 20px;
     gap: 20px;
     width: 100%;
+    background-color: var(--off-black);
 }
 
 /* nav logo styling */
@@ -122,6 +134,50 @@ nav .button-primary i {
 .small-logo {
     height: 100px;
     width: 100px;
+}
+
+/* pages navigation styling */
+ul.pages-nav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background: var(--dark-purple);
+}
+
+ul.pages-nav li.pages-nav-section {
+    display: inline-block;
+    position: relative;
+    line-height: 21px;
+    text-align: left;
+}
+
+ul.pages-nav li.pages-nav-section a {
+    display: block;
+    padding: 20px;
+    color: var(--off-white);
+    text-decoration: none;
+}
+
+ul.pages-nav li.pages-nav-section a:hover {
+    background: var(--dark-blue);
+}
+
+ul.pages-nav li.pages-nav-section ul.dropdown {
+    min-width: 100vw;
+    padding: 0;
+    background: var(--off-black);
+    display: none;
+    position: fixed;
+    left: 0;
+    z-index: 999;
+}
+
+ul.pages-nav li:hover ul.dropdown {
+    display: inline-block;
+}
+
+ul.pages-nav li ul.dropdown li {
+    display: inline-block;
 }
 
 .homepage-section {

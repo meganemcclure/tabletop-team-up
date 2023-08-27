@@ -17,23 +17,51 @@
     <body>
         <!-- NAVBAR -->
         <!-- css for navbar is in `./css/navbar.css -->
-        <nav>
-            <a href="" class="nav-logo">
-                <img class="small-logo" src="./media/TTT-logo-simple.png">
-                <h2>Tabletop Team-Up</h2>
-            </a>
-            <button class="button-primary">
-                <p>Filter</p>
-                <i class="fa-solid fa-filter"></i>
-            </button>
-            <div class="searchbar">
-                <p>Search...</p>
-                <i class="fa-solid fa-magnifying-glass"></i>
+        <nav class="sticky-top">
+            <div class="nav-general">
+                <a href="" class="nav-logo">
+                    <img class="small-logo" src="./media/TTT-logo-simple.png">
+                    <h2>Tabletop Team-Up</h2>
+                </a>
+                <button class="button-primary">
+                    <p>Filter</p>
+                    <i class="fa-solid fa-filter"></i>
+                </button>
+                <div class="searchbar">
+                    <p>Search...</p>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <a href="" class="nav-login" id="login">
+                    <i class="fa-regular fa-user"></i>
+                    <p>Sign Up</p>
+                </a>
             </div>
-            <a href="" class="nav-login" id="login">
-                <i class="fa-regular fa-user"></i>
-                <p>Sign Up</p>
-            </a>
+
+            <ul class="pages-nav">
+                <li class="pages-nav-section">
+                    <a href="#" class="nav-primary"><h4>About Us</h4></a>
+                    <ul class="dropdown about-us">
+                        <li><a href="" class="nav-secondary"><p>Mission Statement</p></a></li>
+                        <li><a href="" class="nav-secondary"><p>Our Vision</p></a></li>
+                    </ul>
+                </li>
+                <li class="pages-nav-section">
+                    <a href="#" class="nav-primary"><h4>Browse</h4></a>
+                    <ul class="dropdown browse">
+                        <li><a href="" class="nav-secondary"><p>Find a Game</p></a></li>
+                        <li><a href="" class="nav-secondary"><p>Find a Game Master</p></a></li>
+                        <li><a href="" class="nav-secondary"><p>Find an Event</p></a></li>
+                        <li><a href="" class="nav-secondary"><p>Find a Table</p></a></li>
+                    </ul>
+                </li>
+                <li class="pages-nav-section">
+                    <a href="#" class="nav-primary"><h4>Help</h4></a>
+                    <ul class="dropdown browse">
+                        <li><a href="" class="nav-secondary"><p>FAQ</p></a></li>
+                        <li><a href="" class="nav-secondary"><p>Contact Us</p></a></li>
+                    </ul>
+                </li>
+            </ul>
         </nav>
 
         <!-- HERO CAROSEL -->
