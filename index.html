@@ -15,6 +15,10 @@
         <link href="./css/footer.css" rel="stylesheet">
     </head>
 
+    <header>
+        
+    </header>
+
     <body>
         <!-- NAVBAR -->
         <!-- css for navbar is in `./css/navbar.css -->
@@ -85,7 +89,7 @@
                             matters—shape the future of tabletop gaming with us!
                         </p>
                         <button class="button-primary">Create an Account</button>
-                        <a>Read Our Full Mission Statement</a>
+                        <a href="">Read Our Full Mission Statement</a>
                     </div>
                     <i class="fa-solid fa-chevron-down"></i>
                 </div>
@@ -151,173 +155,184 @@
 
         <!-- FIND A GAME SECTION -->
         <div class="homepage-section">
-            <h1>Find a Game!</h1>
-            <p>
-                Find your favourite game in our library of over 10,000 games! If you like D&D or Dominoes, 
-                there’s something for everyone on Tabletop Team-Up.
-            </p>
-            <h2>Game Categories</h2>
+            <div class="homepage-section-contents">
+                <h1>Find a Game!</h1>
+                <p>
+                    Find your favourite game in our library of over 10,000 games! If you like D&D or Dominoes, 
+                    there’s something for everyone on Tabletop Team-Up.
+                </p>
+                <h2>Game Categories</h2>
 
-            <!-- css for game category cards in `./css/game-category-card.css` -->
-            <div class="homepage-section-content">
-                <div class="card game-category-card">
-                    <img src="./media/cards-icon-blue.png">
-                    <h3>Card Games</h3>
-                    <div class="card-img-overlay">
-                        <h3>View All Card Games</h3>
+                <!-- css for game category cards in `./css/game-category-card.css` -->
+                <div class="homepage-section-row">
+                    <div class="card game-category-card">
+                        <img src="./media/cards-icon-blue.png">
+                        <h3>Card Games</h3>
+                        <div class="card-img-overlay">
+                            <h3>View All Card Games</h3>
+                        </div>
+                    </div>
+                    <div class="card game-category-card">
+                        <img src="./media/boardgame-icon-blue.png">
+                        <h3>Board Games</h3>
+                        <div class="card-img-overlay">
+                            <h3>View All Board Games</h3>
+                        </div>
+                    </div>
+                    <div class="card game-category-card">
+                        <img src="./media/d20-icon-blue.png">
+                        <h3>Tabletop Role Play Games</h3>
+                        <div class="card-img-overlay">
+                            <h3>View All Tabletop Role Play Games</h3>
+                        </div>
                     </div>
                 </div>
-                <div class="card game-category-card">
-                    <img src="./media/boardgame-icon-blue.png">
-                    <h3>Board Games</h3>
-                    <div class="card-img-overlay">
-                        <h3>View All Board Games</h3>
-                    </div>
-                </div>
-                <div class="card game-category-card">
-                    <img src="./media/d20-icon-blue.png">
-                    <h3>Tabletop Role Play Games</h3>
-                    <div class="card-img-overlay">
-                        <h3>View All Tabletop Role Play Games</h3>
-                    </div>
-                </div>
+
+                <button class="button-primary search-all-button">Search All Game Categories</button>
             </div>
-
-            <button class="button-primary">Search All Game Categories</button>
         </div>
 
         <!-- FIND A GAME MASTER SECTION -->
         <div class="homepage-section find-gm-section">
-            <h1>Find a Game Master!</h1>
-            <p>Have you got players, but no GM? Find a GM to host your next game.</p>
-            <h2>Recommended Game Masters</h2>
+            <div class="homepage-section-contents">
+                <h1>Find a Game Master!</h1>
+                <p>Have you got players, but no GM? Find a GM to host your next game.</p>
+                <h2>Recommended Game Masters</h2>
 
-            <!-- css for gm profile cards is in `./css/gm-profile-card.css` -->
-            <div class="homepage-section-content">
-                <div class="gm-profile-card">
-                    <div class="card">
-                        <img class="small-logo card-img" src="./media/dm1.png">
-                        <button class="button-primary">View Game Master Details</button>
+                <!-- css for gm profile cards is in `./css/gm-profile-card.css` -->
+                <div class="homepage-section-row">
+                    <div class="gm-profile-card">
+                        <div class="gm-image" style="background-image: url(./media/dm1.png);">
+                            <button class="button-primary">View Game Master Details</button>
+                        </div>
+                        <div class="gm-info">
+                            <h2>Casey Crusader</h2>
+                            <h2>Location: Toronto, Ontario</h2>
+                            <h2>Role: Dungeon Master</h2>
+                        </div>
                     </div>
-                    <h2>Casey Crusader</h2>
-                    <h2>Location: Toronto, Ontario</h2>
-                    <h2>Role: Dungeon Master</h2>
-                </div>
-                <div class="gm-profile-card">
-                    <div class="card">
-                        <img class="small-logo card-img" src="./media/dm2.jpg">
-                        <button class="button-primary">View Game Master Details</button>
+                    <div class="gm-profile-card">
+                        <div class="gm-image" style="background-image: url(./media/dm2.jpg);">
+                            <button class="button-primary">View Game Master Details</button>
+                        </div>
+                        <div class="gm-info">
+                            <h2>Logan Lair</h2>
+                            <h2>Location: Ottawa, Ontario</h2>
+                            <h2>Role: Dungeon Master</h2>
+                        </div>
                     </div>
-                    <h2>Logan Lair</h2>
-                    <h2>Location: Ottawa, Ontario</h2>
-                    <h2>Role: Dungeon Master</h2>
-                </div>
-                <div class="gm-profile-card">
-                    <div class="card">
-                        <img class="small-logo card-img" src="./media/dm3.jpg">
-                        <button class="button-primary">View Game Master Details</button>
+                    <div class="gm-profile-card">
+                        <div class="gm-image" style="background-image: url(./media/dm3.jpg);">
+                            <button class="button-primary">View Game Master Details</button>
+                        </div>
+                        <div class="gm-info">
+                            <h2>Matt Mercer</h2>
+                            <h2>Location: Los Angeles, California</h2>
+                            <h2>Role: Dungeon Master</h2>
+                        </div> 
                     </div>
-                    <h2>Matt Mercer</h2>
-                    <h2>Location: Los Angeles, California</h2>
-                    <h2>Role: Dungeon Master</h2> 
                 </div>
+
+                <button class="button-primary search-all-button">Search All Game Masters</button>
             </div>
-
-            <button class="button-primary">Search All Game Masters</button>
         </div>
 
         <!-- FIND A TABLE SECTION -->
         <div class="homepage-section find-table-section">
-            <h1>Find a Table!</h1>
-            <p>Find a table of players who are ready to play!</p>
-            <h2>Recommended Tables</h2>
+            <div class="homepage-section-contents">
+                <h1>Find a Table!</h1>
+                <p>Find a table of players who are ready to play!</p>
+                <h2>Recommended Tables</h2>
 
-            <!-- css for table cards is in `./css/table-card.css` -->
-            <div class="homepage-section-content">
-                <div class="card">
-                    <img class="small-logo card-img-top" src="./media/monopoly.jpg">
-                    <div class="card-body">
-                        <h2>Monday Monopoly</h2>
-                        <p>Location: Toronto, Ontario</p>
-                        <p>Fee: $0 - Free</p>
-                        <p>Available Seats: 6</p>
-                        <p>
-                            Every Monday morning, a group of friends will gathers excitedly for a round of 
-                            Monopoly like never before. Around the table, the classic game board transforms 
-                            into a realm of property tycoons and strategic masterminds.
-                        </p>
-                        <button class="button-primary">View Table Details</button>
+                <!-- css for table cards is in `./css/table-card.css` -->
+                <div class="homepage-section-row">
+                    <div class="card">
+                        <img class="small-logo card-img-top" src="./media/monopoly.jpg">
+                        <div class="card-body">
+                            <h2>Monday Monopoly</h2>
+                            <p>Location: Toronto, Ontario</p>
+                            <p>Fee: $0 - Free</p>
+                            <p>Available Seats: 6</p>
+                            <p>
+                                Every Monday morning, a group of friends will gathers excitedly for a round of 
+                                Monopoly like never before. Around the table, the classic game board transforms 
+                                into a realm of property tycoons and strategic masterminds.
+                            </p>
+                            <button class="button-primary">View Table Details</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="small-logo card-img-top" src="./media/dragon.jpg">
+                        <div class="card-body">
+                            <h2>Legends of Eldoria: Quest for the Lost Relic</h2>
+                            <p>Location: Toronto, Ontario</p>
+                            <p>Fee: $15</p>
+                            <p>Available Seats: 2</p>
+                            <p>
+                                Embark on an epic quest in "Legends of Eldoria: Quest for the Lost Relic.”...
+                            </p>
+                            <button class="button-primary">View Table Details</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="small-logo card-img-top" src="./media/pokemon.jpg">
+                        <div class="card-body">
+                            <h2>Pokemon League</h2>
+                            <p>Location: London, Ontario</p>
+                            <p>Fee: $20</p> 
+                            <p>Available Seats: 6</p>
+                            <p>
+                                Trainers from near and far are preparing for an electrifying Pokémon League 
+                                showdown. The air is buzzing with excitement as the stadium gears up to host 
+                                battles of unparalleled strategy and skill.
+                            </p>
+                            <button class="button-primary">View Table Details</button>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <img class="small-logo card-img-top" src="./media/dragon.jpg">
-                    <div class="card-body">
-                        <h2>Legends of Eldoria: Quest for the Lost Relic</h2>
-                        <p>Location: Toronto, Ontario</p>
-                        <p>Fee: $15</p>
-                        <p>Available Seats: 2</p>
-                        <p>
-                            Embark on an epic quest in "Legends of Eldoria: Quest for the Lost Relic.”...
-                        </p>
-                        <button class="button-primary">View Table Details</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="small-logo card-img-top" src="./media/pokemon.jpg">
-                    <div class="card-body">
-                        <h2>Pokemon League</h2>
-                        <p>Location: London, Ontario</p>
-                        <p>Fee: $20</p> 
-                        <p>Available Seats: 6</p>
-                        <p>
-                            Trainers from near and far are preparing for an electrifying Pokémon League 
-                            showdown. The air is buzzing with excitement as the stadium gears up to host 
-                            battles of unparalleled strategy and skill.
-                        </p>
-                        <button class="button-primary">View Table Details</button>
-                    </div>
-                </div>
+
+                <button class="button-primary search-all-button">Search All Tables</button>
             </div>
-
-            <button class="button-primary">Search All Tables</button>
         </div>
 
         <!-- FAQ SECTION -->
         <div class="homepage-section">
-            <h1>Frequently Asked Questions</h1>
+            <div class="homepage-section-contents">
+                <h1>Frequently Asked Questions</h1>
 
-            <!-- faq css is in `./css/faq.css` -->
-            <div class="faq-question-section">
-                <p>
-                    <b>Q:</b> Do I have to pay for an account?
-                </p>
-                <p>
-                    <b>A:</b> No! Creating an account is completely free. TTT only takes a small 
-                    cut from those who are hosing paid-for games.
-                </p>
-            </div>
-            <div class="faq-question-section">
-                <p>
-                    <b>Q:</b> Can I play if I’m under 18?
-                </p>
-                <p>
-                    <b>A:</b> Yes! If you’re under 18 you can join any group that is not marked as mature (18+).
-                </p>
-            </div>
-            <div class="faq-question-section">
-                <p>
-                    <b>Q:</b> What if I’m being harassed or bullied in my group?
-                </p>
-                <p>
-                    <b>A:</b> Although we hope most players are able to be respectful, in severe cases of 
-                    harassment or bullying, you can report a specific user to our moderation team. If users 
-                    are found to be harassing or bullying other players, they will be banned from the site.
-                </p>
-            </div>
+                <!-- faq css is in `./css/faq.css` -->
+                <div class="faq-question-section">
+                    <p>
+                        <b>Q:</b> Do I have to pay for an account?
+                    </p>
+                    <p>
+                        <b>A:</b> No! Creating an account is completely free. TTT only takes a small 
+                        cut from those who are hosing paid-for games.
+                    </p>
+                </div>
+                <div class="faq-question-section">
+                    <p>
+                        <b>Q:</b> Can I play if I’m under 18?
+                    </p>
+                    <p>
+                        <b>A:</b> Yes! If you’re under 18 you can join any group that is not marked as mature (18+).
+                    </p>
+                </div>
+                <div class="faq-question-section">
+                    <p>
+                        <b>Q:</b> What if I’m being harassed or bullied in my group?
+                    </p>
+                    <p>
+                        <b>A:</b> Although we hope most players are able to be respectful, in severe cases of 
+                        harassment or bullying, you can report a specific user to our moderation team. If users 
+                        are found to be harassing or bullying other players, they will be banned from the site.
+                    </p>
+                </div>
 
-            <div clas="contact-us-section">
-                <h2>Don't see what you're looking for?</h2>
-                <button class="button-primary">Contact Us</button>
+                <div class="contact-us-section">
+                    <h2>Don't see what you're looking for?</h2>
+                    <button class="button-primary">Contact Us</button>
+                </div>
             </div>
         </div>
 
