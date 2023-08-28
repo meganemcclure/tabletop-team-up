@@ -28,4 +28,5 @@
 
 .table-card .card-body .button-primary {
     margin-top: auto;
+    align-self: center;
 }

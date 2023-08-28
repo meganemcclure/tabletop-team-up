@@ -87,10 +87,6 @@ i {
     background-color: var(--dark-blue);
 }
 
-.search-all-button {
-    align-self: flex-start;
-}
-
 .find-gm-section {
     background-color: var(--dark-purple);
 }
