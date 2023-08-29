@@ -1,6 +1,67 @@
+/* include import so we can use the colour style variables */
+@import "style.css";
+
 footer {
     display: flex;
     flex: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+footer img {
+    height: 200px;
+    width: 200px;
+}
+
+#socials-list {
+    display: flex;
+    flex-direction: row;
+}
+
+#socials-list li {
+    background-color: var(--off-white);
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+#socials-list li:hover {
+    background-color: var(--bright-purple);
+}
+
+#socials-list li a {
+    line-height: 1;
+}
+
+#socials-list li a i {
+    color: var(--off-black);
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 20px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+}
+
+.footer-section ul li a p {
+    font-size: 14px;
+}
+
+.footer-section ul li a p:hover {
+    color: var(--bright-purple);
 }

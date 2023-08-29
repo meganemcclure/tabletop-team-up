@@ -49,6 +49,10 @@
     gap: 20px;
 }
 
+.carousel-caption .carousel-caption-contents p {
+    text-align: left;
+}
+
 /* bouncing icon */
 .scroll-icon-container {
     flex: 0 1 auto;
