@@ -65,17 +65,17 @@
 
 @keyframes bounceAnimation {
     from {
-        margin-top: 7px;
+        margin-top: 16px;
         margin-bottom: 0px;
     }
 
     50% {
         margin-top: 0px;
-        margin-bottom: 7px;
+        margin-bottom: 16px;
     }
 
     to {
-        margin-top: 7px;
+        margin-top: 16px;
         margin-bottom: 0px;
     }
 }
