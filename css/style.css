@@ -110,7 +110,7 @@ i {
     }
 
     .desktop-only {
-        display: none !important;
+        display: none;
     }
 
     .mobile-only {
