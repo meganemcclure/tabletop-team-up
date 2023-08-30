@@ -151,7 +151,7 @@ footer img {
         justify-content: space-evenly;
     }
 
-    .mobile-hidden {
+    .closed-state .footer-content-section {
         display: none !important;
     }
 
