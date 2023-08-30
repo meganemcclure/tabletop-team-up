@@ -1,6 +1,4 @@
 .carousel-inner {
-    margin-top: 167px;
-    /* height: 800px !important; */
     overflow: hidden;
 }
 
@@ -17,7 +15,7 @@
     object-fit: cover;
     object-position: center;
     overflow: hidden;
-    height: 75vh;
+    height: 100vh;
 }
 
 .carousel-caption {

@@ -22,25 +22,27 @@
         <!-- css for navbar is in `./css/navbar.css -->
         <nav class="sticky-top">
             <div class="nav-general">
+                <i class="fa-solid fa-bars mobile-only"></i>
                 <a href="" class="nav-logo">
                     <img class="small-logo" src="./media/TTT-logo-simple.png">
-                    <h2>Tabletop Team-Up</h2>
+                    <h2 class="desktop-only">Tabletop Team-Up</h2>
                 </a>
-                <button class="button-primary">
+                <button class="button-primary desktop-only">
                     <p>Filter</p>
                     <i class="fa-solid fa-filter"></i>
                 </button>
-                <div class="searchbar">
+                <div class="searchbar desktop-only">
                     <p>Search...</p>
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
-                <a href="" class="nav-login" id="login">
+                <a href="" class="nav-login desktop-only" id="login">
                     <img src="./media/profile-icon.png">
                     <p>Login/Sign Up</p>
                 </a>
+                <i class="fa-solid fa-magnifying-glass mobile-only"></i>
             </div>
 
-            <ul class="pages-nav">
+            <ul class="pages-nav desktop-only">
                 <li class="pages-nav-section">
                     <a href="#" class="nav-primary"><h4>About Us</h4></a>
                     <ul class="dropdown about-us">
@@ -78,7 +80,8 @@
                 </div>
                 <div class="carousel-caption d-md-block">
                     <div class="carousel-caption-contents">
-                        <h1>Tabletop Team-Up<br>Our mission</h1>
+                        <h1 class="desktop-only">Tabletop Team-Up</h1>
+                        <h1>Our Mission</h1>
                         <p>
                             Empower your inclusive tabletop gaming journey with Tabletop Team Up. Designed for 
                             beginners and minority group members, our platform streamlines the search for 
@@ -209,7 +212,7 @@
                             <p>Role: Dungeon Master</p>
                         </div>
                     </div>
-                    <div class="gm-profile-card">
+                    <div class="gm-profile-card desktop-only">
                         <div class="gm-image" style="background-image: url(./media/dm2.jpg);">
                             <button class="button-primary">View Game Master Details</button>
                         </div>
@@ -272,7 +275,7 @@
                             <button class="button-primary">View Table Details</button>
                         </div>
                     </div>
-                    <div class="card table-card">
+                    <div class="card table-card desktop-only">
                         <img class="card-img-top" src="./media/pokemon.jpg">
                         <div class="card-body">
                             <h2>Pokemon League</h2>
@@ -341,47 +344,76 @@
     <!-- FOOTER SECTION -->
     <!-- footer styling is in `./css/footer.css` -->
     <footer>
-        <img src="./media/TTT-logo-banner.png">
+        <div class="footer-group" id="footer-group1">
+            <img src="./media/TTT-logo-banner.png">
 
-        <div class="footer-section">
-            <h4>Connect with Us</h4>
-            <ul id="socials-list">
-                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-discord"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-            </ul>
+            <div class="footer-section">
+                <h4>Connect with Us </h4>
+                <ul id="socials-list">
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-discord"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
+            </div>
         </div>
     
-        <div class="footer-section">
-            <h4>About Us</h4>
-            <ul>
-                <li><a href=""><p>Mission Statement</p></a></li>
-                <li><a href=""><p>Our Vision</p></a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h4>Browse</h4>
-            <ul>
-                <li><a href=""><p>Find a Game</p></a></li>
-                <li><a href=""><p>Find a Game Master</p></a></li>
-                <li><a href=""><p>Find an Event</p></a></li>
-                <li><a href=""><p>Find a Table</p></a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h4>Help</h4>
-            <ul>
-                <li><a href=""><p>FAQ</p></a></li>
-                <li><a href=""><p>Contact Us</p></a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h4>Policy</h4>
-            <ul>
-                <li><a href=""><p>Privacy</p></a></li>
-                <li><a href=""><p>Terms and Conditions</p></a></li>
-            </ul>
+        <div class="footer-group" id="footer-group2">
+            <div class="footer-section">
+                <div class="footer-title" id="about-us-title">
+                    <h4>About Us</h4>
+                    <i class="fa-solid fa-chevron-down mobile-only"></i>
+                </div>
+                <ul class="mobile-hidden footer-content-section" id="about-us-content">
+                    <li><a href=""><p>Mission Statement</p></a></li>
+                    <li><a href=""><p>Our Vision</p></a></li>
+                </ul>
+            </div>
+
+            <div class="divider mobile-only"></div>
+
+            <div class="footer-section">
+                <div class="footer-title" id="browse-title">
+                    <h4>Browse</h4>
+                    <i class="fa-solid fa-chevron-down mobile-only"></i>
+                </div>
+                <ul class="mobile-hidden footer-content-section" id="browse-content">
+                    <li><a href=""><p>Find a Game</p></a></li>
+                    <li><a href=""><p>Find a Game Master</p></a></li>
+                    <li><a href=""><p>Find an Event</p></a></li>
+                    <li><a href=""><p>Find a Table</p></a></li>
+                </ul>
+            </div>
+
+            <div class="divider mobile-only"></div>
+
+            <div class="footer-section">
+                <div class="footer-title" id="help-title">
+                    <h4>Help</h4>
+                    <i class="fa-solid fa-chevron-down mobile-only"></i>
+                </div>
+                <ul class="mobile-hidden footer-content-section" id="help-content">
+                    <li><a href=""><p>FAQ</p></a></li>
+                    <li><a href=""><p>Contact Us</p></a></li>
+                </ul>
+            </div>
+
+            <div class="divider mobile-only"></div>
+            
+            <div class="footer-section">
+                <div class="footer-title" id="policy-title">
+                    <h4>Policy</h4>
+                    <i class="fa-solid fa-chevron-down mobile-only"></i>
+                </div>
+                <ul class="mobile-hidden footer-content-section" id="policy-content">
+                    <li><a href=""><p>Privacy</p></a></li>
+                    <li><a href=""><p>Terms and Conditions</p></a></li>
+                </ul>
+            </div>
+
+            <div class="divider mobile-only"></div>
         </div>
     </footer>
+
+    <script src="./js/index.js"></script>
 </html>

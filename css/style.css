@@ -95,12 +95,29 @@ i {
     background-color: var(--pure-black);
 }
 
+.mobile-only {
+    display: none !important;
+}
+
 /* mobile */
 @media only screen and (max-width: 760px) {
     .homepage-section-contents {
         padding: 80px 40px 80px 40px;
     }
+    
     .homepage-section-row {
         flex-direction: column;
+    }
+
+    .desktop-only {
+        display: none !important;
+    }
+
+    .mobile-only {
+        display: block !important;
+    }
+
+    .nav-general {
+        justify-content: space-between;
     }
 }

@@ -149,3 +149,10 @@ ul.pages-nav li:hover ul.dropdown {
 ul.pages-nav li ul.dropdown li {
     display: inline-block;
 }
+
+/* mobile */
+@media only screen and (max-width: 760px) {
+    .nav-general {
+        padding: 5px 20px 5px 20px;
+    }
+}
